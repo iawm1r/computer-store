@@ -1,0 +1,314 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  .model {
+    position: relative;
+    gap: 0px;
+    margin: 150px auto;
+    width: 550px;
+    height: 330px;
+    background-color: white;
+    .FlexParent {
+      gap: 40px;
+      .BoxHed {
+        width: 490px;
+        height: 60px;
+        border: 1px solid gray;
+        .TextModel {
+          font-size: 16px;
+          color: gray;
+          text-align: center;
+          line-height: 60px;
+        }
+      }
+      .FlexSeccondPart {
+        gap: 20px;
+        .Flextext {
+          .ExplainProducts {
+            font-size: 15px;
+            color: blue;
+            font-weight: 600;
+          }
+          .PriceProducts {
+            font-size: 20px;
+            color: black;
+            font-weight: 600;
+          }
+        }
+        .image_model {
+          width: 50px;
+          height: 50px;
+          margin-top: 10px;
+        }
+      }
+    }
+    .FlexButtom {
+      gap: 40px;
+      .btn_ModelOne,
+      .btn_ModelTwo {
+        width: 230px;
+        height: 40px;
+        background-color: #14c145;
+        a {
+          color: white;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+      .btn_ModelTwo {
+        background-color: #0047b2;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20%;
+          height: 0%;
+          background-color: #14c145;
+          transition: none;
+          z-index: 0;
+        }
+        &:hover::before {
+          animation: fill-down 0.5s forwards;
+          border-radius: 0.25rem !important;
+          border: 1px solid #14c145;
+        }
+        a {
+          display: block;
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
+    .hr_overlay {
+      width: 490px;
+      background-color: gray;
+      margin-bottom: 30px;
+    }
+  }
+}
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.overlay.active .model {
+  animation: fadeIn 0.45s ease forwards;
+}
+@media (min-width: 540px) and (max-width: 768px) {
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    .model {
+      position: relative;
+      gap: 0px;
+      margin: 150px auto;
+      width: 500px;
+      height: 330px;
+      background-color: white;
+      .FlexParent {
+        gap: 40px;
+        .BoxHed {
+          width: 420px;
+          height: 60px;
+          border: 1px solid gray;
+          .TextModel {
+            font-size: 16px;
+            color: gray;
+            text-align: center;
+            line-height: 60px;
+          }
+        }
+        .FlexSeccondPart {
+          gap: 20px;
+          .Flextext {
+            .ExplainProducts {
+              font-size: 15px;
+              color: blue;
+              font-weight: 600;
+            }
+            .PriceProducts {
+              font-size: 20px;
+              color: black;
+              font-weight: 600;
+            }
+          }
+          .image_model {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+          }
+        }
+      }
+      .FlexButtom {
+        gap: 40px;
+        .btn_ModelOne,
+        .btn_ModelTwo {
+          width: 190px;
+          height: 40px;
+          background-color: #14c145;
+          a {
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+        .btn_ModelTwo {
+          background-color: #0047b2;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 0%;
+            background-color: #14c145;
+            transition: none;
+            z-index: 0;
+          }
+          &:hover::before {
+            animation: fill-down 0.5s forwards;
+            border-radius: 0.25rem !important;
+            border: 1px solid #14c145;
+          }
+          a {
+            display: block;
+            position: relative;
+            z-index: 1;
+          }
+        }
+      }
+      .hr_overlay {
+        width: 420px;
+        background-color: gray;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .overlay.active .model {
+    animation: fadeIn 0.45s ease forwards;
+  }
+}
+@media screen and (max-width: 540px){
+ .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    .model {
+      position: relative;
+      gap: 0px;
+      margin: 150px auto;
+      width: 430px;
+      height: 330px;
+      background-color: white;
+      .FlexParent {
+        gap: 40px;
+        .BoxHed {
+          width: 380px;
+          height: 60px;
+          border: 1px solid gray;
+          .TextModel {
+            font-size: 16px;
+            color: gray;
+            text-align: center;
+            line-height: 60px;
+          }
+        }
+        .FlexSeccondPart {
+          gap: 20px;
+          .Flextext {
+            .ExplainProducts {
+              font-size: 15px;
+              color: blue;
+              font-weight: 600;
+            }
+            .PriceProducts {
+              font-size: 20px;
+              color: black;
+              font-weight: 600;
+            }
+          }
+          .image_model {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+          }
+        }
+      }
+      .FlexButtom {
+        gap: 40px;
+        .btn_ModelOne,
+        .btn_ModelTwo {
+          width: 170px;
+          height: 40px;
+          background-color: #14c145;
+          a {
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+        .btn_ModelTwo {
+          background-color: #0047b2;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 0%;
+            background-color: #14c145;
+            transition: none;
+            z-index: 0;
+          }
+          &:hover::before {
+            animation: fill-down 0.5s forwards;
+            border-radius: 0.25rem !important;
+            border: 1px solid #14c145;
+          }
+          a {
+            display: block;
+            position: relative;
+            z-index: 1;
+          }
+        }
+      }
+      .hr_overlay {
+        width: 380px;
+        background-color: gray;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .overlay.active .model {
+    animation: fadeIn 0.45s ease forwards;
+  }
+}
